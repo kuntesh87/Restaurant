@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { searchRestaurent } from './Api/restaurant';
 
 function App() {
   return (
@@ -22,5 +23,5 @@ function App() {
     </div>
   );
 }
-
+searchRestaurent().then().catch();
 export default App;
