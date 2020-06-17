@@ -1,20 +1,22 @@
-import React from 'react';
+import React,{ Fragment } from 'react';
 
 function ListItem(props) {
   const restaurants = Array.from(props.restaurants); 
   const listItems = restaurants.map((restaurant) =>
-   <div key={restaurant.id}>
-      <h3>{restaurant.name}</h3>
-          <p>{restaurant.address}</p>
-          <p>${restaurant.price}</p>
-    </div>
+   <Fragment key={restaurant.id}>
+      <dt>{restaurant.name}</dt>
+      <dd>{restaurant.address}</dd>
+      <dd>{restaurant.area}</dd>
+      <dd>${restaurant.price}</dd>
+      <br/>
+    </Fragment>
    
   );
   return (
-      <div>
+      <dl>
           <h3>List View</h3>
-          {listItems}</div>
-          
+      {listItems}
+    </dl>        
   
   );
 }
