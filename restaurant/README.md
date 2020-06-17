@@ -1,5 +1,44 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Tech Question-Answer
+
+### 1.	How long did you spend on the coding assignment? What would you add to your solution if you had more time? If you didn't spend much time on the coding test then use this as an opportunity to explain what you would add.
+
+I spend 4 hours on this Project,if I have more time I would add more test case, more UI Effect,next page button, More WCAG Standards.
+
+### What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you have used it.
+
+Hook is a most useful feature that was added to the latest version of React Language which help me to write more readable and efficent code.
+
+ const [city, setCity] = useState("");
+  const [filter,setFilter] = useState("");
+  const [restaurants, setRestaurants] = useState([]);
+   
+  if (props.restaurants !== restaurants && restaurants.length === 0 && filter === "") {
+        setRestaurants(props.restaurants);
+    }
+    const handleSubmit = () => {
+    props.searchRestaurant(city);
+    }
+
+### 3.	How would you track down a performance issue in production? Have you ever had to do this?
+
+I can use try and catch in production, inside catch  we can use logging that error on backend log system and using that log we can track down performance issue.I had use that during my last project and I used same mechanism of logging.  
+
+### 4.	How would you improve the API that you just used?
+-We can sort restaurant list by name or price.
+-We can add Cuisine type,Rating and service hours, isDeliver,Mapping with Menu.
+
+### 5.	Please describe yourself using JSON.
+const myself = {
+    name: 'Kuntesh Patel',
+    experience: '7+ year',
+    tech:'React,Node,Ethereum',
+    mobileno: '416-804-4011',
+    email:'kuntesh87@gmail.com'
+}
+
 ## Available Scripts
 
 In the project directory, you can run:

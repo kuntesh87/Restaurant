@@ -1,6 +1,7 @@
 import React,{useState, Fragment} from 'react';
 import './dashboard.css';
 import ListItem from './listItems';
+import { search } from './dashboard.services';
 
 function Dashboard(props) {
   const [city, setCity] = useState("");
@@ -14,17 +15,7 @@ function Dashboard(props) {
     props.searchRestaurant(city);
     }
    
-  const search = (restaurant,filterValue) => {
-   if (restaurant.name.toLowerCase().includes(filterValue) || restaurant.name.includes(filterValue)) {
-        return restaurant;
-   }
-     if (restaurant.address.toLowerCase().includes(filterValue) || restaurant.address.includes(filterValue)) {
-        return restaurant;
-     }
-     if (restaurant.area.toLowerCase().includes(filterValue) || restaurant.area.includes(filterValue)) {
-        return restaurant;
-      }
-  }
+  
   const handleFilter = (filterValue) => {
     setFilter(filterValue);
     const result = props.restaurants.filter(restaurant => (
