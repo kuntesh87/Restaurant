@@ -15,13 +15,13 @@ function Dashboard(props) {
     }
    
   const search = (restaurant,filterValue) => {
-   if (restaurant.name.includes(filterValue)) {
+   if (restaurant.name.toLowerCase().includes(filterValue) || restaurant.name.includes(filterValue)) {
         return restaurant;
    }
-     if (restaurant.address.includes(filterValue)) {
+     if (restaurant.address.toLowerCase().includes(filterValue) || restaurant.address.includes(filterValue)) {
         return restaurant;
      }
-     if (restaurant.area.includes(filterValue)) {
+     if (restaurant.area.toLowerCase().includes(filterValue) || restaurant.area.includes(filterValue)) {
         return restaurant;
       }
   }
