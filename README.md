@@ -11,17 +11,17 @@ I spend 4 hours on this Project,if I have more time I would add more test case, 
 
 Hook is a most useful feature that was added to the latest version of React Language which help me to write more readable and efficent code.
 
- const [city, setCity] = useState("");
-  const [filter,setFilter] = useState("");
-  const [restaurants, setRestaurants] = useState([]);
+ ``` const [city, setCity] = useState("");
+     const [filter,setFilter] = useState("");
+     const [restaurants, setRestaurants] = useState([]);
    
-  if (props.restaurants !== restaurants && restaurants.length === 0 && filter === "") {
-        setRestaurants(props.restaurants);
-    }
-    const handleSubmit = () => {
-    props.searchRestaurant(city);
-    }
-
+    if (props.restaurants !== restaurants && restaurants.length === 0 && filter === "") {
+            setRestaurants(props.restaurants);
+        }
+        const handleSubmit = () => {
+        props.searchRestaurant(city);
+        }
+```
 ### 3.	How would you track down a performance issue in production? Have you ever had to do this?
 
 I can use try and catch in production, inside catch  we can use logging that error on backend log system and using that log we can track down performance issue.I had use that during my last project and I used same mechanism of logging.  
@@ -31,14 +31,15 @@ I can use try and catch in production, inside catch  we can use logging that err
 -We can add Cuisine type,Rating and service hours, isDeliver,Mapping with Menu.
 
 ### 5.	Please describe yourself using JSON.
+```
 const myself = {
     name: 'Kuntesh Patel',
     experience: '7+ year',
     tech:'React,Node,Ethereum',
     mobileno: '416-804-4011',
     email:'kuntesh87@gmail.com'
-}
-
+  }
+```
 ## Available Scripts
 
 In the project directory, you can run:
