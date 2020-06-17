@@ -1,15 +1,15 @@
 import {connect} from 'react-redux';
-import { searchReasturent } from './action';
+import { searchRestaurant } from './action';
 
 import Dashboard from './dashboard.component';
 
 
 const mapStateToProps = state => ({
-    
+    restaurants:state
 });
   
 const mapDispatchToProps =  {
-  searchReasturent 
+  searchRestaurant 
 };
 
 

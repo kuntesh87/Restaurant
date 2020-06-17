@@ -2,22 +2,25 @@ import React,{useState} from 'react';
 import './dashboard.css';
 
 
-function Dashboard() {
-const handleSubmit = () => {
-    
-}
-
+function Dashboard(props) {
     const [city, setCity] = useState("");
-    console.log(city);
+    const [restaurants, setRestaurants] = useState({});
+    if (props.restaurants !== restaurants) {
+        setRestaurants(props.restaurants);
+    }
+    const handleSubmit = () => {
+        console.log('clicked')
+    props.searchRestaurant(city);
+}
   return (
     <div className="dashboard">
-      <form onSubmit={handleSubmit}>
+    
         <label>
                   City:
         </label>
               <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />
-        <input type="submit" value="Submit" />
-      </form>
+        <button type="submit" onClick={()=>handleSubmit()} >Submit </button>
+     
     </div>
   );
 }

@@ -1,1 +1,0 @@
-export const FETCH_RESTAURENT = "FETCH_RESTAURENT";

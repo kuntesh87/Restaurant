@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import restaurent from './restaurent'
+import restaurant from './restaurant'
 
 
 export default combineReducers({
-  restaurent
+  restaurant
 })
