@@ -1,7 +1,7 @@
 import * as actionType from '../ActionsTypes/restaurant';
 
 const initialState={
-    restaurants:{},
+    restaurants:[],
 };
 
 const restaurant = (state = initialState, action) => {
