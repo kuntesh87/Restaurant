@@ -1,0 +1,6 @@
+.error   { color: #900; }
+.success { color: #007a00; }
+.error   input { border: 3px solid #900; }
+.success input { border: 3px solid #007a00; }
+.dashboard input { margin:10px}
+.dashboard label { margin:10px}
