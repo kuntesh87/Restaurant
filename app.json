@@ -32,7 +32,7 @@
     "image": "heroku/ruby",
     "buildpacks": [
         {
-            "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+            "url": "https://github.com/kuntesh87/Restaurent/tree/master/build"
         }
     ],
     "environments": {
